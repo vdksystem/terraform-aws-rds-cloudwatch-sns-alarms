@@ -50,3 +50,9 @@ variable "swap_usage_threshold" {
 
   # 256 Megabyte in Byte
 }
+
+variable "kms_master_key_id" {
+  description = "The ID of an AWS-managed customer master key (CMK) for Amazon SNS or a custom CMK"
+  type        = string
+  default     = null
+}
